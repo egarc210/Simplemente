@@ -1,0 +1,74 @@
+/*Selector de Elemento - Selecciona un elemento con base en su etiqueta
+ p {
+    color: blue;
+ }*/
+
+ /*Selector de Clase - Una clase se puede clear múltiples veces (es reutilizable) e inicia con un punto
+ .cliente {
+    color: blue;
+ }*/
+
+  /*Selector de ID - Se puede tener múltiples ID's por página pero sus nombres no pueden repetirse
+ #cliente {
+    color: blue;
+ }*/
+
+   /*Selector de Atributo - Selecciona elementos basado en algún atributo que tenga
+[src="logo.jpg"]{
+    color: blue;
+}*/
+
+:root{
+    --blanco:#ffffff;
+    --oscuro: #212121;
+    --primario: #FFC107;
+    --secundario: #0097A7;
+    --gris:#757575;
+    
+}
+
+html { /*Esta linea y la de abajo hacen que los REM funcionen*/
+    font-size: 62.5%;
+}
+
+body { /*Esta linea y la de arriba hacen que los REM funcionen*/
+    font-size: 16px;
+    font-family: "Krub", sans-serif;
+}
+
+.titulo  {
+    text-align: center;
+    font-size: 3.8rem; /* 1rem = 10px*/
+}
+
+
+.titulo span { /*Los REM tomn como referencia el tamaño de documento*/
+    font-size: 2rem; 
+}
+
+.contenedor {
+    width: 120rem;
+    margin: 0 auto;
+}
+
+.nav-bg {
+    background-color: var(--secundario);
+}
+
+.navegacion-principal {
+    padding: 1rem;
+    display:flex;
+    justify-content: space-between;
+}
+
+.navegacion-principal a{
+    color:var(--blanco); 
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.navegacion-principal a: hover {
+    background-color:var(--primario);
+}
+
